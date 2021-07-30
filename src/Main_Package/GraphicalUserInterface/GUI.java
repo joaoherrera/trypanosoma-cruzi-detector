@@ -70,7 +70,7 @@ public class GUI extends JFrame implements ActionListener{
         
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLayout(new BorderLayout());
-        this.setIconImage((new ImageIcon(this.getClass().getResource("/Sprites/logo_tryp.png"))).getImage());
+        this.setIconImage((new ImageIcon(this.getClass().getResource("/Icons/logo_tryp.png"))).getImage());
     
         this.standardFont = new Font("calibri",Font.LAYOUT_LEFT_TO_RIGHT,14);  
         this.createComponents();
@@ -117,14 +117,14 @@ public class GUI extends JFrame implements ActionListener{
         this.mainToolBar.setLayout(null);
         
         this.homeButton = new JButton("Home");
-        this.homeButton.setIcon(new ImageIcon(this.getClass().getResource("/Sprites/home_tryp.png")));
+        this.homeButton.setIcon(new ImageIcon(this.getClass().getResource("/Icons/home_tryp.png")));
         this.homeButton.setVerticalTextPosition(JButton.BOTTOM);
         this.homeButton.setHorizontalTextPosition(JButton.CENTER);
         this.homeButton.setFocusable(false);
         this.homeButton.setBounds(0, 0, 150, 100);
         
         this.analiseButton = new JButton("Análise");
-        this.analiseButton.setIcon(new ImageIcon(this.getClass().getResource("/Sprites/hist_tryp.png")));
+        this.analiseButton.setIcon(new ImageIcon(this.getClass().getResource("/Icons/hist_tryp.png")));
         this.analiseButton.setVerticalTextPosition(JButton.BOTTOM);
         this.analiseButton.setHorizontalTextPosition(JButton.CENTER);
         this.analiseButton.setFocusable(false);
@@ -132,7 +132,7 @@ public class GUI extends JFrame implements ActionListener{
         this.analiseButton.setBounds(150, 0, 150, 100);
         
         this.resultButton = new JButton("Resultados");
-        this.resultButton.setIcon(new ImageIcon(this.getClass().getResource("/Sprites/result_tryp.png")));
+        this.resultButton.setIcon(new ImageIcon(this.getClass().getResource("/Icons/result_tryp.png")));
         this.resultButton.setVerticalTextPosition(JButton.BOTTOM);
         this.resultButton.setHorizontalTextPosition(JButton.CENTER);
         this.resultButton.setFocusable(false);
@@ -140,7 +140,7 @@ public class GUI extends JFrame implements ActionListener{
         this.resultButton.setBounds(300, 0, 150, 100);
         
         this.trainningButton = new JButton("Treinamento");
-        this.trainningButton.setIcon(new ImageIcon(this.getClass().getResource("/Sprites/train_tryp.png")));
+        this.trainningButton.setIcon(new ImageIcon(this.getClass().getResource("/Icons/train_tryp.png")));
         this.trainningButton.setVerticalTextPosition(JButton.BOTTOM);
         this.trainningButton.setHorizontalTextPosition(JButton.CENTER);
         this.trainningButton.setFocusable(false);
@@ -148,7 +148,7 @@ public class GUI extends JFrame implements ActionListener{
         this.trainningButton.setBounds(750, 0, 150, 100);
         
         this.identAuto = new JButton("Processar");
-        this.identAuto.setIcon(new ImageIcon(this.getClass().getResource("/Sprites/iden_tryp.png")));
+        this.identAuto.setIcon(new ImageIcon(this.getClass().getResource("/Icons/iden_tryp.png")));
         this.identAuto.setVerticalTextPosition(JButton.BOTTOM);
         this.identAuto.setHorizontalTextPosition(JButton.CENTER);
         this.identAuto.setFocusable(false);
@@ -213,7 +213,7 @@ public class GUI extends JFrame implements ActionListener{
                     }
                     else if(SystemManager.isArquivo(pagInicial.getFileBox().getCurrentPath().getAbsolutePath() + SystemManager.osSeparator() + pagInicial.getFileBox().getSelectedValue())){
                         image = new ImageProperties(pagInicial.getFileBox().getCurrentPath().getAbsolutePath() + SystemManager.osSeparator() + pagInicial.getFileBox().getSelectedValue());
-                        analiseButton.setEnabled(true);
+                        analiseButton.setEnabled(false);
                         trainningButton.setEnabled(true);
                         identAuto.setEnabled(false);
                     }
@@ -267,7 +267,7 @@ public class GUI extends JFrame implements ActionListener{
                if(image != null)
                   trainning = new GUITrainning(image);
                else
-                  JOptionPane.showInternalMessageDialog(null, "Erro ao abrir uma nova instancia \n Imagem nao definida", "Erro - Treinamento", JOptionPane.ERROR_MESSAGE, new ImageIcon(this.getClass().getResource("/Sprites/errorMsg_tryp.png")));        
+                  JOptionPane.showInternalMessageDialog(null, "Erro ao abrir uma nova instancia \n Imagem nao definida", "Erro - Treinamento", JOptionPane.ERROR_MESSAGE, new ImageIcon(this.getClass().getResource("/Icons/errorMsg_tryp.png")));        
             }
         });
         

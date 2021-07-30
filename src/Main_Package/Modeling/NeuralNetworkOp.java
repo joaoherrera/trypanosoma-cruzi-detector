@@ -1,4 +1,4 @@
-package Main_Package.Modelling;
+package Main_Package.Modeling;
 
 import java.io.File;
 import java.util.LinkedList;

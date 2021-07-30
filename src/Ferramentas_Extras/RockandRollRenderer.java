@@ -34,10 +34,10 @@ public class RockandRollRenderer implements ListCellRenderer{
         JLabel renderer = (JLabel) this.defaultListRenderer.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
         
         if(SystemManager.isArquivo(((RockandRollList) list).getCurrentPath().getAbsolutePath() + SystemManager.osSeparator() +(String) value)){
-            renderer.setIcon(new ImageIcon(this.getClass().getResource("../Sprites/pic_tryp.png")));
+            renderer.setIcon(new ImageIcon(this.getClass().getResource("../Icons/pic_tryp.png")));
         }
         else if(SystemManager.isDiretorio(((RockandRollList) list).getCurrentPath().getAbsolutePath() + SystemManager.osSeparator() +(String) value)){
-            renderer.setIcon(new ImageIcon(this.getClass().getResource("../Sprites/path_tryp.png")));
+            renderer.setIcon(new ImageIcon(this.getClass().getResource("../Icons/path_tryp.png")));
         }
         
         return renderer;

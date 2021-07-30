@@ -2,7 +2,7 @@ package Main_Package;
 
 import Adaptacao.Pixel;
 import Main_Package.GraphicalUserInterface.GUITrainning;
-import Main_Package.Modelling.OutputDataSetRow;
+import Main_Package.Modeling.OutputDataSetRow;
 import java.awt.Color;
 import java.util.LinkedList;
 

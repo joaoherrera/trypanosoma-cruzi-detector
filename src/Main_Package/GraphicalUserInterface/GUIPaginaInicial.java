@@ -62,8 +62,8 @@ public class GUIPaginaInicial extends JPanel{
         this.left  = new JPanel(new BorderLayout());
         this.right = new JPanel(new BorderLayout());
         
-        bckButton.setIcon(new ImageIcon(this.getClass().getResource("/Sprites/backButton_tryp.png")));
-        bckButton.setRolloverIcon(new ImageIcon(this.getClass().getResource("/Sprites/backButtonPressed_tryp.png")));
+        bckButton.setIcon(new ImageIcon(this.getClass().getResource("/Icons/backButton_tryp.png")));
+        bckButton.setRolloverIcon(new ImageIcon(this.getClass().getResource("/Icons/backButtonPressed_tryp.png")));
         bckButton.setFocusPainted(false);
         bckButton.setContentAreaFilled(false);
         bckButton.setBorderPainted(false);
@@ -94,7 +94,7 @@ public class GUIPaginaInicial extends JPanel{
         this.add(this.backGrnd);
         this.backGrnd.add(this.left);
         this.backGrnd.add(this.right);
-        this.imgView.add(new RockandRollImageView(new ImageIcon(this.getClass().getResource("/Sprites/open_tryp.png"))));
+        this.imgView.add(new RockandRollImageView(new ImageIcon(this.getClass().getResource("/Icons/open_tryp.png"))));
     }
     
     private void configBckButton(JButton bckButton){
@@ -117,7 +117,7 @@ public class GUIPaginaInicial extends JPanel{
                     view = new RockandRollImageView(new ImageIcon(pathBox.getCurrentPath() + SystemManager.osSeparator() +fileBox.getSelectedValue()));
                 }
                 else{
-                    view = new RockandRollImageView(new ImageIcon(this.getClass().getResource("/Sprites/noImg_tryp.png")));
+                    view = new RockandRollImageView(new ImageIcon(this.getClass().getResource("/Icons/noImg_tryp.png")));
                 }
                 imgView.removeAll();
                 imgView.add(view);

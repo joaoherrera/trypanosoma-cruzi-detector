@@ -1,4 +1,4 @@
-package Main_Package.Modelling;
+package Main_Package.Modeling;
 
 import Adaptacao.Elemento;
 import java.util.LinkedList;

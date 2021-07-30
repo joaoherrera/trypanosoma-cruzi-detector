@@ -1,7 +1,7 @@
 package Main_Package.GraphicalUserInterface;
 
 import Adaptacao.SystemManager;
-import Main_Package.Modelling.IOFunctions;
+import Main_Package.Modeling.IOFunctions;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -87,11 +87,11 @@ public class GUIResultados extends JPanel{
         
         this.addItem = new JButton("Adicionar Info");
         this.addItem.setFocusable(false);
-        this.createGroup = new JButton(new ImageIcon(this.getClass().getResource("/Sprites/add_tryp.png")));
+        this.createGroup = new JButton(new ImageIcon(this.getClass().getResource("/Icons/add_tryp.png")));
         this.createGroup.setFocusable(false);
-        this.deleteGroup = new JButton(new ImageIcon(this.getClass().getResource("/Sprites/delete_tryp.png")));
+        this.deleteGroup = new JButton(new ImageIcon(this.getClass().getResource("/Icons/delete_tryp.png")));
         this.deleteGroup.setFocusable(false);
-        this.compute = new JButton(new ImageIcon(this.getClass().getResource("/Sprites/comp_tryp.png")));
+        this.compute = new JButton(new ImageIcon(this.getClass().getResource("/Icons/comp_tryp.png")));
         this.compute.setFocusable(false);
         this.compute.setToolTipText("Calcular parasita/celula");
         
@@ -316,7 +316,7 @@ public class GUIResultados extends JPanel{
                 resDec = new BigDecimal(calculate(indexes));
                 resDec = resDec.setScale(2, BigDecimal.ROUND_HALF_UP);
                 
-                JOptionPane.showMessageDialog(null, "parasita/célula = " + resDec, "Média parasita/célula", JOptionPane.OK_OPTION, new ImageIcon(this.getClass().getResource("/Sprites/compBig_tryp.png")));               
+                JOptionPane.showMessageDialog(null, "parasita/célula = " + resDec, "Média parasita/célula", JOptionPane.OK_OPTION, new ImageIcon(this.getClass().getResource("/Icons/compBig_tryp.png")));               
             }
         });
     }

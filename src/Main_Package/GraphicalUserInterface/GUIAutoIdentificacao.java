@@ -139,9 +139,9 @@ public class GUIAutoIdentificacao extends JPanel{
         
         this.bIdentificar   = new JButton("Identificar");
         this.bRefazer       = new JButton("Refazer");
-        this.bcheckAll      = new JButton(new ImageIcon(this.getClass().getResource("/Sprites/check_tryp.png")));
-        this.buncheckAll    = new JButton(new ImageIcon(this.getClass().getResource("/Sprites/uncheck_tryp.png")));
-        this.viewOrigImg    = new RockandRollButton(new ImageIcon(this.getClass().getResource("/Sprites/origImg_tryp.png")));
+        this.bcheckAll      = new JButton(new ImageIcon(this.getClass().getResource("/Icons/check_tryp.png")));
+        this.buncheckAll    = new JButton(new ImageIcon(this.getClass().getResource("/Icons/uncheck_tryp.png")));
+        this.viewOrigImg    = new RockandRollButton(new ImageIcon(this.getClass().getResource("/Icons/origImg_tryp.png")));
         
         this.bIdentificar.setFocusable(false);
         this.bRefazer.setFocusable(false);
@@ -270,12 +270,12 @@ public class GUIAutoIdentificacao extends JPanel{
             public void actionPerformed(ActionEvent e) {
                 if(!viewOrigImg.isPressed()){
                     viewOrigImg.setPressed(true);
-                    viewOrigImg.setIcon(new ImageIcon(this.getClass().getResource("/Sprites/origImgEd_tryp.png")));
+                    viewOrigImg.setIcon(new ImageIcon(this.getClass().getResource("/Icons/origImgEd_tryp.png")));
                     viewOrigImg.setToolTipText("Visualizar identificada");
                 }
                 else{
                     viewOrigImg.setPressed(false);
-                    viewOrigImg.setIcon(new ImageIcon(this.getClass().getResource("/Sprites/origImg_tryp.png")));
+                    viewOrigImg.setIcon(new ImageIcon(this.getClass().getResource("/Icons/origImg_tryp.png")));
                     viewOrigImg.setToolTipText("Visualizar original");
                 }
                        

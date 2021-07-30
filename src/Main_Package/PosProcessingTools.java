@@ -6,7 +6,7 @@ import Adaptacao.Citoplasma;
 import Adaptacao.Metricas;
 import Adaptacao.Parasitas;
 import Adaptacao.Pixel;
-import Main_Package.Modelling.IOFunctions;
+import Main_Package.Modeling.IOFunctions;
 import java.awt.Color;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

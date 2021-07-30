@@ -1,4 +1,4 @@
-package Main_Package.Modelling;
+package Main_Package.Modeling;
 
 import java.io.BufferedReader;
 import java.io.File;

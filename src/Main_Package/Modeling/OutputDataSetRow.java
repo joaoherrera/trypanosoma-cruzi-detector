@@ -1,4 +1,4 @@
-package Main_Package.Modelling;
+package Main_Package.Modeling;
 
 import Adaptacao.Aglomeracao;
 import Adaptacao.Cell;
